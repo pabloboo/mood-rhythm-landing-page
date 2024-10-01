@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?display=swap&amp;family=Epilogue%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
     />
 
-    <title>Galileo Design</title>
+    <title>Mood Rhythm</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -18,11 +18,13 @@
       <div class="layout-container flex h-full grow flex-col">
         <div class="px-40 flex flex-1 justify-center py-5">
           <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+
+            <!-- First section: hero image and app store buttons -->
             <div class="@container">
               <div class="@[480px]:p-4">
                 <div
                   class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
-                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://cdn.usegalileo.ai/sdxl10/b3fedeae-d7e8-4e4e-a54d-181712236159.png");'
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("logo.png");'
                 >
                   <div class="flex flex-col gap-2 text-left">
                     <h1
@@ -31,7 +33,7 @@
                       MoodRhythm
                     </h1>
                     <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                      Track your emotions, visualize patterns, and improve your mental health
+                      Track your emotions, visualize patterns and improve your mental health
                     </h2>
                   </div>
                   <div class="flex-wrap gap-3 flex">
@@ -49,8 +51,11 @@
                 </div>
               </div>
             </div>
+
+            <!-- Second section: brief description of the app -->
             <h3 class="text-[#181113] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">How MoodRhythm helps</h3>
             <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <!-- Feature 1: Log your mood -->
               <div class="flex flex-1 gap-3 rounded-lg border border-[#e6dbde] bg-white p-4 flex-col">
                 <div class="text-[#181113]" data-icon="CalendarCheck" data-size="24px" data-weight="regular">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
@@ -64,6 +69,23 @@
                   <p class="text-[#8a606b] text-sm font-normal leading-normal">Record your feelings with daily reminders and journal prompts.</p>
                 </div>
               </div>
+
+              <!-- Feature 2: Match your mood -->
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#e6dbde] bg-white p-4 flex-col">
+                <div class="text-[#181113]" data-icon="ChartLine" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="none" viewBox="0 0 24 24">
+                        <path d="M13 12V7V2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                        <circle cx="9" cy="18" r="4" stroke="currentColor" stroke-width="1.5"></circle>
+                        <path d="M19 8C15.6863 8 13 5.31371 13 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                      </svg>                      
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h2 class="text-[#181113] text-base font-bold leading-tight">Match your moood</h2>
+                  <p class="text-[#8a606b] text-sm font-normal leading-normal">Listen to a playlist based on your daily mood.</p>
+                </div>
+              </div>
+
+              <!-- Feature 3: Visualize trends -->
               <div class="flex flex-1 gap-3 rounded-lg border border-[#e6dbde] bg-white p-4 flex-col">
                 <div class="text-[#181113]" data-icon="ChartLine" data-size="24px" data-weight="regular">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
@@ -77,6 +99,8 @@
                   <p class="text-[#8a606b] text-sm font-normal leading-normal">See how your emotions change over time with easy-to-understand graphs.</p>
                 </div>
               </div>
+
+              <!-- Feature 4: Understand triggers -->
               <div class="flex flex-1 gap-3 rounded-lg border border-[#e6dbde] bg-white p-4 flex-col">
                 <div class="text-[#181113]" data-icon="ChartPie" data-size="24px" data-weight="regular">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
@@ -90,6 +114,8 @@
                   <p class="text-[#8a606b] text-sm font-normal leading-normal">Identify patterns by tracking your thoughts, activities, and the world around you.</p>
                 </div>
               </div>
+
+              <!-- Feature 5: Share insights -->
               <div class="flex flex-1 gap-3 rounded-lg border border-[#e6dbde] bg-white p-4 flex-col">
                 <div class="text-[#181113]" data-icon="ChatCircleDots" data-size="24px" data-weight="regular">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
@@ -104,12 +130,14 @@
                 </div>
               </div>
             </div>
+            
+            <!-- Third section: app screenshots -->
             <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
               <div class="flex flex-col gap-3 text-center">
                 <div class="px-4">
                   <div
                     class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full"
-                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/596f82e6-6444-49f6-a2d4-360bb69028ec.png");'
+                    style='background-image: url("screenshot1.jpg");'
                   ></div>
                 </div>
               </div>
@@ -117,7 +145,7 @@
                 <div class="px-4">
                   <div
                     class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full"
-                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/662eb88c-c6b6-4723-8abc-d404c9686a3c.png");'
+                    style='background-image: url("screenshot2.jpg");'
                   ></div>
                 </div>
               </div>
@@ -125,11 +153,21 @@
                 <div class="px-4">
                   <div
                     class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full"
-                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/55a5696e-7cc4-4cc9-a46d-18df6f52c98f.png");'
+                    style='background-image: url("screenshot3.jpg");'
+                  ></div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 text-center">
+                <div class="px-4">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full"
+                    style='background-image: url("screenshot4.jpg");'
                   ></div>
                 </div>
               </div>
             </div>
+
+            <!-- Fourth section: user testimonials -->
             <h2 class="text-[#181113] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">What people are saying</h2>
             <div class="flex flex-col gap-8 overflow-x-hidden bg-white p-4">
               <div class="flex flex-col gap-3 bg-white">
@@ -140,7 +178,7 @@
                   ></div>
                   <div class="flex-1">
                     <p class="text-[#181113] text-base font-medium leading-normal">Lindsey</p>
-                    <p class="text-[#8a606b] text-sm font-normal leading-normal">April 1, 2023</p>
+                    <p class="text-[#8a606b] text-sm font-normal leading-normal">Sept 2, 2024</p>
                   </div>
                 </div>
                 <div class="flex gap-0.5">
@@ -193,7 +231,7 @@
                   ></div>
                   <div class="flex-1">
                     <p class="text-[#181113] text-base font-medium leading-normal">Sarah</p>
-                    <p class="text-[#8a606b] text-sm font-normal leading-normal">March 12, 2023</p>
+                    <p class="text-[#8a606b] text-sm font-normal leading-normal">Sept 14, 2024</p>
                   </div>
                 </div>
                 <div class="flex gap-0.5">
@@ -245,7 +283,7 @@
                   ></div>
                   <div class="flex-1">
                     <p class="text-[#181113] text-base font-medium leading-normal">James</p>
-                    <p class="text-[#8a606b] text-sm font-normal leading-normal">February 28, 2023</p>
+                    <p class="text-[#8a606b] text-sm font-normal leading-normal">Nov 1, 2024</p>
                   </div>
                 </div>
                 <div class="flex gap-0.5">
@@ -286,11 +324,12 @@
                   </div>
                 </div>
                 <p class="text-[#181113] text-base font-normal leading-normal">
-                  MoodRhythm has been a game changer for me. It's so easy to use, and I love that I can track my mood and journal in one place. The insights have been really
-                  interesting, too.
+                  MoodRhythm has been a game changer for me. It's so easy to use and the insights have been really interesting.
                 </p>
               </div>
             </div>
+
+            <!-- Fifth section: FAQs section -->
             <h2 class="text-[#181113] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Frequently asked questions</h2>
             <div class="flex flex-col p-4 gap-3">
               <details class="flex flex-col rounded-xl border border-[#e6dbde] bg-white px-[15px] py-[7px] group" open="">
@@ -303,8 +342,7 @@
                   </div>
                 </summary>
                 <p class="text-[#8a606b] text-sm font-normal leading-normal pb-2">
-                  MoodRhythm offers a free plan with limited features and a premium plan with unlimited access to all tools and insights. Premium plans start at $9.99 per month or
-                  $59.99 per year.
+                  MoodRhythm is completely free to download and use. There are no hidden fees or in-app purchases. We believe in making emotional well-being tools accessible to everyone.
                 </p>
               </details>
               <details class="flex flex-col rounded-xl border border-[#e6dbde] bg-white px-[15px] py-[7px] group">
@@ -317,8 +355,7 @@
                   </div>
                 </summary>
                 <p class="text-[#8a606b] text-sm font-normal leading-normal pb-2">
-                  MoodRhythm offers a free plan with limited features and a premium plan with unlimited access to all tools and insights. Premium plans start at $9.99 per month or
-                  $59.99 per year.
+                  No, MoodRhythm is currently only available on Android devices. We may work in the future on an iOS version and will keep you updated on our progress. Sign up for our waitlist to stay in the loop.
                 </p>
               </details>
               <details class="flex flex-col rounded-xl border border-[#e6dbde] bg-white px-[15px] py-[7px] group">
@@ -331,48 +368,18 @@
                   </div>
                 </summary>
                 <p class="text-[#8a606b] text-sm font-normal leading-normal pb-2">
-                  MoodRhythm offers a free plan with limited features and a premium plan with unlimited access to all tools and insights. Premium plans start at $9.99 per month or
-                  $59.99 per year.
+                  Absolutely. At MoodRhythm, we prioritize your privacy and security. All your data is stored securely in your device and is never shared with third parties. You are always in control of your information, and we adhere to strict data protection standards. For more details, please review our Privacy Policy.
                 </p>
               </details>
             </div>
+
+            <!-- Sixth section: footer -->
             <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
               <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
                 <a class="text-[#8a606b] text-base font-normal leading-normal min-w-40" href="#">About</a>
-                <a class="text-[#8a606b] text-base font-normal leading-normal min-w-40" href="#">Blog</a>
-                <a class="text-[#8a606b] text-base font-normal leading-normal min-w-40" href="#">Community</a>
-                <a class="text-[#8a606b] text-base font-normal leading-normal min-w-40" href="#">Support</a>
+                <a class="text-[#8a606b] text-base font-normal leading-normal min-w-40" href="https://github.com/pabloboo/MoodRhythm" target="_blank">Community</a>
+                <a class="text-[#8a606b] text-base font-normal leading-normal min-w-40" href="https://pabloboo.github.io/portfolio/" target="_blank">Support</a>
                 <a class="text-[#8a606b] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
-                <a class="text-[#8a606b] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
-              </div>
-              <div class="flex flex-wrap justify-center gap-4">
-                <a href="#">
-                  <div class="text-[#8a606b]" data-icon="FacebookLogo" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
-                      ></path>
-                    </svg>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="text-[#8a606b]" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
-                      ></path>
-                    </svg>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="text-[#8a606b]" data-icon="InstagramLogo" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
-                      ></path>
-                    </svg>
-                  </div>
-                </a>
               </div>
               <p class="text-[#8a606b] text-base font-normal leading-normal">@2023 MoodRhythm, Inc</p>
             </footer>
