@@ -23,7 +23,7 @@
             <div class="@container">
               <div class="@[480px]:p-4">
                 <div
-                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10 hero-section"
                   style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("logo.png");'
                 >
                   <div class="flex flex-col gap-2 text-left">
@@ -334,7 +334,7 @@
             <div class="flex flex-col p-4 gap-3">
               <details class="flex flex-col rounded-xl border border-[#e6dbde] bg-white px-[15px] py-[7px] group" open="">
                 <summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
-                  <p class="text-[#181113] text-sm font-medium leading-normal">How much does MoodRhythm cost?</p>
+                  <p class="text-[#181113] text-sm font-medium leading-normal faq-question">How much does MoodRhythm cost?</p>
                   <div class="text-[#181113] group-open:rotate-180" data-icon="CaretDown" data-size="20px" data-weight="regular">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
                       <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
@@ -347,7 +347,7 @@
               </details>
               <details class="flex flex-col rounded-xl border border-[#e6dbde] bg-white px-[15px] py-[7px] group">
                 <summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
-                  <p class="text-[#181113] text-sm font-medium leading-normal">Is MoodRhythm available on Android and iOS?</p>
+                  <p class="text-[#181113] text-sm font-medium leading-normal faq-question">Is MoodRhythm available on Android and iOS?</p>
                   <div class="text-[#181113] group-open:rotate-180" data-icon="CaretDown" data-size="20px" data-weight="regular">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
                       <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
@@ -360,7 +360,7 @@
               </details>
               <details class="flex flex-col rounded-xl border border-[#e6dbde] bg-white px-[15px] py-[7px] group">
                 <summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
-                  <p class="text-[#181113] text-sm font-medium leading-normal">Is my data private and secure?</p>
+                  <p class="text-[#181113] text-sm font-medium leading-normal faq-question">Is my data private and secure?</p>
                   <div class="text-[#181113] group-open:rotate-180" data-icon="CaretDown" data-size="20px" data-weight="regular">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
                       <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
@@ -381,11 +381,49 @@
                 <a class="text-[#8a606b] text-base font-normal leading-normal min-w-40" href="https://pabloboo.github.io/portfolio/" target="_blank">Support</a>
                 <a class="text-[#8a606b] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
               </div>
-              <p class="text-[#8a606b] text-base font-normal leading-normal">@2023 MoodRhythm, Inc</p>
+              <p class="text-[#8a606b] text-base font-normal leading-normal">@2024 MoodRhythm, Inc</p>
             </footer>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- JS Script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // HERO SECTION CURSOR EFFECT
+        // Select the hero section
+        const heroSection = document.querySelector('.hero-section');
+        // Apply shadow when cursor hovers over the section
+        function changeCursor(event) {
+          event.target.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+          event.target.style.transition = 'box-shadow 0.3s ease-in-out';
+        }
+        // Delete shadow when cursor leaves the section
+        function restoreCursor(event) {
+          event.target.style.boxShadow = 'none';
+        }
+        // Add event listeners to the hero section
+        if (heroSection) {
+          heroSection.addEventListener('mouseover', changeCursor);
+          heroSection.addEventListener('mouseout', restoreCursor);
+        }
+
+        // FAQ SECTION HOVER EFFECT
+        // Select all the FAQ questions
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        // Open the details when hovered
+        function openDetails(event) {
+          const details = event.target.parentElement.parentElement;
+          details.open = true;
+        }
+        // Add event listeners to the FAQ questions
+        if (faqQuestions) {
+          faqQuestions.forEach((faqDetail) => {
+            faqDetail.addEventListener('mouseover', openDetails);
+          });
+        }
+      });
+    </script>
   </body>
 </html>
